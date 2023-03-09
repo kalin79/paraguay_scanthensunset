@@ -1,0 +1,175 @@
+input[type="text"],
+input[type="password"]
+     font-size: 24px
+     border-radius: 50px
+     color: $blackDark4
+     font-family: $fontDescription
+     background-color: $blackDark5
+     border: 1px solid $blackDark5 
+     padding: 0.65rem 2.0rem
+     text-align: center
+     width: auto
+     @media screen and (min-width: 992px)
+          font-size: 49px
+          padding: 0.95rem 4.5rem
+     &:focus,
+     &:active,
+     &:hover
+          outline: none !important
+          box-shadow: none !important
+          background-color: $blackDark5 !important
+          border-color: none !important
+          border: 1px solid $blackDark5 !important
+          color: $blackDark4 !important
+     &::placeholder
+          color: $blackDark4
+          text-transform: uppercase
+.error
+     color: red
+     font-size: 20px
+     font-family: $fontDescription
+     margin-top: .75rem
+     display: none
+     &.active
+          display: block
+.form-select
+     font-size: 18px
+     border-radius: 50px
+     color: $blackDark4
+     font-family: $fontDescription
+     background-color: $blackDark5
+     border: 1px solid $blackDark5 
+     // padding: 0.95rem 3.5rem
+     text-align: center
+     @media screen and (min-width: 992px)
+          font-size: 49px
+          // padding: 0.95rem 4.5rem
+     &:focus,
+     &:active,
+     &:hover
+          outline: none !important
+          box-shadow: none !important
+          background-color: $blackDark5 !important
+          border-color: none !important
+          border: 1px solid $blackDark5 !important
+          color: $blackDark4 !important
+     &::placeholder
+          color: $blackDark4
+          text-transform: uppercase
+input:-internal-autofill-selected
+     border-radius: 50px !important
+     color: $blackDark4 !important
+     background-color: $blackDark5 !important
+
+input:-webkit-autofill
+     outline: none !important
+     box-shadow: none !important
+     background-color: $blackDark5 !important
+     border-color: none !important
+     border: 1px solid $blackDark5 !important
+     color: $blackDark4 !important
+.boxBirthDate
+     margin-top: .5rem
+     select
+          background: transparent
+          border: 0px solid $yellow
+          width: 100px
+          font-size: 50px
+          font-family: $fontTitle
+          border-radius: 0
+          padding: 0
+          text-align: center
+          color: white
+          text-transform: uppercase
+          &:last-child
+               width: 140px
+          &:nth-child(2)
+               margin-left: 1rem
+               margin-right: 1rem
+          &:focus,
+          &:active,
+          &:hover
+               outline: none !important
+               box-shadow: none !important
+               background-color: transparent !important
+               // border-color: none !important
+               border: 0px solid $yellow !important
+               color: white !important
+          &::placeholder
+               color: white
+               text-transform: uppercase
+label
+     @include fontTitle($whiteLight2)
+     line-height: initial
+     font-size: 22px
+     @media screen and (min-width: 992px)
+          font-size: 22px
+     @media screen and (min-width: 1200px)
+          font-size: 22px
+     @media screen and (min-width: 1400px)
+          font-size: 22px
+.boxOption
+     .boxRadio
+          &:first-child
+               margin-right: 1rem
+.boxRadio
+     label
+          text-align: center
+          color: white
+          text-transform: uppercase
+          margin-left: .5rem
+     &.active
+          .boxCheck
+               &.blueCheck
+                    &:before
+                         background-image: url(/frontend/checkblue.png)
+               &:before
+                    content: ''
+                    background-image: url(/frontend/check.png)
+     .boxCheck
+          width: 24px
+          height: 24px
+          position: relative
+          &.blueCheck
+               &:before
+                    background-image: url(/frontend/notcheckblue.png)
+          &:before
+               content: ''
+               background-image: url(/frontend/notcheck.png)
+               background-size: cover
+               background-position: center
+               position: absolute
+               top: 0
+               right: 0
+               width: 24px
+               height: 24px
+.boxLegal
+     margin-top: 0.5rem
+     a
+          @include fontTitle(white)
+          line-height: 1.25em
+          font-size: 18px
+          text-decoration: underline
+          @media screen and (min-width: 992px)
+               font-size: 18px
+          @media screen and (min-width: 1200px)
+               font-size: 18px
+          @media screen and (min-width: 1400px)
+               font-size: 18px
+     label
+          font-size: 18px
+          line-height: 1.25em
+          margin-left: .5rem
+          @media screen and (min-width: 992px)
+               font-size: 18px
+          @media screen and (min-width: 1200px)
+               font-size: 18px
+          @media screen and (min-width: 1400px)
+               font-size: 18px
+               
+.boxMessageError
+     display: none
+     p
+          color: red
+
+               

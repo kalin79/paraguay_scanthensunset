@@ -1,0 +1,626 @@
+a
+     text-decoration: none
+     &:focus,
+     &:hover
+          outline: transparent
+          box-shadow: none
+h1,
+h2,
+h3,
+p
+     margin: 0 
+
+body
+     background: white
+
+button
+     @include styleButton($blackDark3)
+
+h1,
+h2,
+h3,
+h4
+     @include fontTitle($whiteLight2)
+p
+     @include fontDescription($whiteLight2)
+.color-yellow
+     color: $yellow !important
+.color-blue
+     color: $blue !important
+.color-white
+     color: white !important
+.boxSwitch
+     @include boxSwicth()
+.heightFull
+     height: 100vh
+.bgSunnet
+     background-image: url(/frontend/fondo_2.png)
+     background-size: cover
+     background-position: center
+     height: 90vh
+     // height: 581px
+     position: relative
+     z-index: 1
+     padding-top: 2.5rem
+     @media screen and (min-height: 800px)
+          height: 700px  
+          padding-top: 6rem
+.fondoFooterBg
+     background-image: url(/frontend/sun2.svg)
+     background-size: cover
+     background-position: center
+     height: 350px
+     position: absolute
+     bottom: -30px
+     left: 0
+     width: 100%
+     z-index: 11
+     @media screen and (min-height: 740px)
+          bottom: -40px
+     @media screen and (min-height: 800px)
+          bottom: -40px
+     @media screen and (min-height: 915px)
+          bottom: -20px
+.bgSun 
+     border: 0px solid red
+     width: 100% 
+     position: absolute
+     bottom: 5rem
+     padding-bottom: 3rem
+     left: 0
+     z-index: 20
+.boxTitleHidden
+     position: absolute
+     top: 40rem
+     opacity: 0
+.notOverflow
+     overflow: hidden
+     position: relative
+.boxButtom
+     margin-top: .5rem
+     button
+          @include styleButton(white)
+.centerBody
+     text-align: center
+.fondoCamara
+     background-image: url(/frontend/fondocamara.jpg)
+     background-size: cover
+     background-position: center
+.backgroundYellow
+     background-image: url(/frontend/bg-amarillop.png)
+     background-size: cover
+     background-position: center
+.brushBlue
+     background-image: url(/frontend/frame_2.png)
+     background-size: cover
+     background-position: 0 -120px
+     padding-bottom: 3.5rem
+     @media screen and (min-height: 700px)
+          padding-bottom: 4.5rem
+     @media screen and (min-height: 800px)
+          background-position: 0 -43px
+          padding-bottom: 5.5rem
+     // @media screen and (min-width: 390px)
+     //      padding-bottom: 5.5rem
+     // @media screen and (min-width: 414px)
+     //      padding-bottom: 5.5rem
+     //      background-position: center
+     
+.boxLogoWhite
+     img
+          width: 140px
+          @media screen and (min-height: 800px)
+               width: 276px
+.boxRelative
+     position: relative
+.boxCodeResulta
+     background-image: url(/frontend/manta2.png)
+     background-size: cover
+     background-position: center
+     width: 286px
+     height: 60px
+     margin: 1.5rem auto 0
+     @media screen and (min-width: 390px)
+          margin: 2.5rem auto 0
+     @media screen and (min-width: 414px)
+          margin: 1.5rem auto 0
+     p
+          text-align: center
+          font-size: 22px 
+          line-height: 2.5em
+          @media screen and (min-width: 992px)
+               font-size: 22px 
+               line-height: 2.5em
+          @media screen and (min-width: 1200px)
+               font-size: 22px 
+               line-height: 2.5em
+          @media screen and (min-width: 1400px)
+               font-size: 22px 
+               line-height: 2.5em
+.boxTaDa2
+     margin: 0rem auto 0
+     @media screen and (min-width: 390px)
+          margin: 0.5rem auto 0
+     @media screen and (min-width: 414px)
+          margin: 0.5rem auto 0
+     img
+          width: 200px
+.brushWhite
+     position: absolute
+     bottom: 0
+     left: 0
+     z-index: 10
+     width: 100%
+     img
+          object-fit: cover
+          width: 100%
+.boxAppBackus2
+     margin-top: -0.5rem
+     p
+          font-family: Arial
+          font-size: 14px
+          line-height: 2.25em
+          color: $blue
+          text-align: center
+          @media screen and (min-width: 992px)
+               font-size: 14px 
+               line-height: 2.25em
+          @media screen and (min-width: 1200px)
+               font-size: 14px 
+               line-height: 2.25em
+          @media screen and (min-width: 1400px)
+               font-size: 14px 
+               line-height: 2.25em
+.boxAppBackus
+     margin-top: .5rem
+     img
+          margin-left: 0.5rem
+     p
+          font-family: Arial
+          font-size: 14px
+          line-height: 2.25em
+          color: $blue
+          text-align: center
+          @media screen and (min-width: 992px)
+               font-size: 14px 
+               line-height: 2.25em
+          @media screen and (min-width: 1200px)
+               font-size: 14px 
+               line-height: 2.25em
+          @media screen and (min-width: 1400px)
+               font-size: 14px 
+               line-height: 2.25em
+.boxLegalSend
+     margin-top: 1rem
+     label,
+     a
+          font-family: Arial
+          font-size: 14px
+          line-height: 3em
+          color: $blue
+     a
+          text-decoration: underline
+     .boxRadio
+          .boxCheck
+               &::before
+                    border: 1px solid $blue
+                    content: ''
+                    border-radius: 10px
+                    margin-right: .5rem
+          &.active
+               .boxCheck
+                    &::before
+                         content: ''
+                         background: $blue
+
+.boxSendEmail
+     input[type="text"]
+          width: 275px
+          background-color: transparent
+          border: 0
+          background-image: url(/frontend/input2.png)
+          background-size: cover
+          background-position: center 
+          color: $blue
+          border-radius: 0px
+          height: 40px
+          box-sizing: border-box
+          padding: .65rem .5rem
+          font-size: 14px
+          // font-family: Arial
+          text-transform: uppercase
+          @media screen and (min-width: 992px)
+               font-size: 14px
+          &:focus,
+          &:active,
+          &:hover
+               outline: none !important
+               box-shadow: none !important
+               background-color: transparent!important
+               border-color: none !important
+               border: 0px solid $blackDark5 !important
+               color: $blue !important
+          &::placeholder
+               color: $blue
+     a
+          width: 65px
+          height: 40px
+          // background: $blue
+          background-image: url(/frontend/btn.png)
+          background-size: cover
+          background-position: center 
+          border-radius: 0px
+          margin-left: 0rem
+          svg
+               color: $yellow
+               width: 1.5rem
+               height: 1.5rem
+               margin: auto
+               left: -5px
+               position: relative
+.boxResult
+     border: 0px solid red
+     width: 300px
+     margin: 0rem auto 0
+     position: relative
+     @media screen and (min-width: 360px) and (min-height: 740px)
+          margin: .5rem auto 0
+     @media screen and (min-width: 390px)
+          margin: 0rem auto 0
+     @media screen and (min-width: 414px)
+          margin: 0rem auto 0 
+     
+     .boxVector
+          &.v1
+               left: 0
+               top: 0.5rem
+          &.v2
+               left: auto
+               right: 0
+               top: 0.5rem
+          &.v3
+               left: 0
+               top: auto
+               bottom: -0.5rem
+          &.v4
+               left: auto
+               right: 0
+               top: auto
+               bottom: -0.5rem
+     .boxDetailDscto
+          h3,
+          h4
+               color: $blue
+          h3
+               font-size: 22px 
+               text-align: center
+               @media screen and (min-width: 414px)
+                    font-size: 29px 
+               @media screen and (min-width: 992px)
+                    font-size: 29px
+               @media screen and (min-width: 1200px)
+                    font-size: 29px
+               @media screen and (min-width: 1400px)
+                    font-size: 29px
+          h4
+               font-size: 18px 
+               text-align: center
+               @media screen and (min-width: 414px)
+                    font-size: 22px 
+               @media screen and (min-width: 992px)
+                    font-size: 22px
+               @media screen and (min-width: 1200px)
+                    font-size: 22px
+               @media screen and (min-width: 1400px)
+                    font-size: 22px
+          p
+               font-size: 120px 
+               color: $blue
+               line-height: 1em
+               text-align: center
+               @media screen and (min-width: 414px)
+                    font-size: 120px
+                    line-height: 1em
+               @media screen and (min-width: 992px)
+                    font-size: 120px 
+                    line-height: 1em
+               @media screen and (min-width: 1200px)
+                    font-size: 120px 
+                    line-height: 1em
+               @media screen and (min-width: 1400px)
+                    font-size: 120px 
+                    line-height: 1em
+.boxTitleResultado
+     margin-top: 1rem
+     h1
+          font-size: 20px
+          @media screen and (min-width: 414px)
+               font-size: 30px
+          @media screen and (min-width: 992px)
+               font-size: 30px
+          @media screen and (min-width: 1200px)
+               font-size: 30px
+          @media screen and (min-width: 1400px)
+               font-size: 30px
+.SubirFoto
+     width: 0.1px
+     height: 0.1px
+     opacity: 0
+     overflow: hidden
+     position: absolute
+     z-index: -1
+     line-height: normal
+     margin:0
+.boxLogoSunset
+     margin-top: 2rem
+     img
+          width: 10rem
+
+.boxBtn
+     @include styleButton(white)
+.boxVector
+     position : absolute
+     top: 4rem
+     left: 3rem
+     z-index: 5
+     &.v2
+          left: auto
+          right: 3rem
+     &.v3,
+     &.v4
+          top: auto
+          bottom: 5.5rem
+     &.v4
+          right: 3rem
+          left: auto
+
+
+.boxIconCamara
+     margin-top: 4.5rem
+     
+     p
+          text-align: center
+          margin-top: .5rem
+          font-size: 14px
+          @media screen and (min-width: 992px)
+               font-size: 14px
+          @media screen and (min-width: 1200px)
+               font-size: 14px
+          @media screen and (min-width: 1400px)
+               font-size: 14px
+     svg
+          width: 5rem
+          height: 5rem
+          color: white
+          margin: auto
+          text-align: center
+#camara
+     display: inline-block
+     position: relative
+#snap
+     border-radius: 50%
+     background-color: rgba(200,200,200,.6)
+     border: 5px solid white
+     position: absolute
+     bottom: 2rem
+     width: 100px
+     min-width: 100px
+     height: 100px
+     left: calc(50% - 50px)
+
+#video
+     display: none
+#download-link
+     display: none
+.boxFooterText
+     position: absolute
+     bottom: 9rem
+     left: 50%
+     transform: translateX(-50%)
+     z-index: 100
+     background-image: url(/frontend/brushLarge.png)
+     background-size: cover
+     background-position: center
+     width: 217px
+     height: 77px
+     z-index: 12
+     p
+          text-transform: uppercase
+          text-align: center
+          color: $blue
+          font-size: 31px
+          line-height: 1.25em
+          @media screen and (min-width: 992px)
+               font-size: 31px
+               line-height: 1.25em
+          @media screen and (min-width: 1200px)
+               font-size: 31px
+               line-height: 1.25em
+          @media screen and (min-width: 1400px)
+               font-size: 31px
+               line-height: 1.25em
+.boxError
+     background-color: $yellow
+     background-image: url(/frontend/bg-amarillop.png)
+     background-size: cover
+     background-position: center
+     &.bg3
+          background-image: url(/frontend/bg3.png)
+     &.bgImgBlue
+          background-color: $blue
+          background-image: url(/frontend/bg-az.png)
+     .boxContentCenter
+          height: 100%
+          width: 100%
+          a
+               text-align: center
+          .boxTitleClose
+               margin-top: 3rem
+               h2
+                    text-align: center
+                    font-size: 30px
+                    line-height: 1em
+                    @media screen and (min-width: 992px)
+                         font-size: 30px
+                         line-height: 1em
+                    @media screen and (min-width: 1200px)
+                         font-size: 30px
+                         line-height: 1em
+                    @media screen and (min-width: 1400px)
+                         font-size: 30px
+                         line-height: 1em
+                    .boxBrushText
+                         background-image: url(/frontend/manta.svg)
+                         background-size: cover
+                         background-position: center
+                         width: 298px
+                         height: 54px
+                         display: block
+                         margin: 0 auto
+                         line-height: 1.75em
+                         @media screen and (min-width: 992px)
+                              line-height: 1.75em
+                         @media screen and (min-width: 1200px)
+                              line-height: 1.75em
+                         @media screen and (min-width: 1400px)
+                              line-height: 1.75em
+                         &.bg-yellow
+                              background-image: url(/frontend/brush3.png)
+     .brushBottom,
+     .brushTop
+          width: 100%
+          position: absolute
+          top: 0
+          left: 0
+          z-index: 10
+          &.tp0
+               top: -4rem
+               @media screen and (min-width: 390px)
+                    top: 0
+
+          img
+               width: 100%
+               object-fit: cover
+     .brushBottom
+          top: auto
+          bottom: -6rem
+          &.b0
+               bottom: -2rem
+               @media screen and (min-width: 390px)
+                    bottom: 0rem
+.boxSunset
+     img
+          width: 150px
+          @media screen and (min-width: 414px)
+               width: 200px
+
+.boxCenterPhoto
+     border: 0px solid red
+     height: 90vh
+     position: relative
+.height90
+     height: 600px
+     top: 4rem
+     border: 0px solid yellow
+     @media screen and (min-height: 740px)
+          height: 668px
+     @media screen and (min-height: 800px)
+          height: 668px
+          top: 7rem
+          border: 0px solid red
+
+.boxSol
+     margin: 0 auto .75rem
+.boxMar
+     margin: .5rem auto 0.85rem
+.boxRestriccion
+     .boxCoronas
+          margin-left: 1rem
+     .boxTitularR1
+          margin-bottom: 1rem
+          h2
+               text-align: center
+               &.small
+                    font-size: 22px !important
+                    line-height: 2.35em
+     .boxOlas
+          position: relative
+          padding-top: .35rem
+          &:before,
+          &:after
+               background-image: url(/frontend/linea.png)
+               background-size: cover
+               background-position: center
+               width: 177px
+               height: 13px
+               content: ''
+               position: absolute
+               top: -8px
+               left: -4px
+          &:after
+               top: auto
+               bottom: -8px
+          &.blanco
+               &:before,
+               &:after
+                    background-image: url(/frontend/lineaWhite.png)
+               .boxBrushTextsmall
+                    &:first-child
+                         margin-top: .5rem
+     .boxBrushTextsmall
+          // background-image: url(/frontend/brushS.png)
+          // background-size: cover
+          // background-position: center
+          width: 172px
+          height: 29px
+          display: block
+          margin: 0 auto
+          // line-height: 1.75em
+          
+          // @media screen and (min-width: 992px)
+          //      line-height: 1.75em
+          // @media screen and (min-width: 1200px)
+          //      line-height: 1.75em
+          // @media screen and (min-width: 1400px)
+          //      line-height: 1.75em
+          p
+               font-size: 22px
+               text-align: center
+               line-height: 1.5em
+               color: $blue
+          
+     .boxBrushText
+          background-image: url(/frontend/manta.svg)
+          background-size: cover
+          background-position: center
+          width: 298px
+          height: 54px
+          display: block
+          margin: 0 auto
+          line-height: 1.75em
+          @media screen and (min-width: 992px)
+               line-height: 1.75em
+          @media screen and (min-width: 1200px)
+               line-height: 1.75em
+          @media screen and (min-width: 1400px)
+               line-height: 1.75em
+          p
+               font-size: 22px
+               text-align: center
+               line-height: 2.20em
+          &.bg-yellow
+               background-image: url(/frontend/brush3.png)
+
+.boxTituloPre
+     margin: 2.5rem 0 1.5rem
+     h2
+          font-size: 24px
+          line-height: 1.25em
+.closeBtn
+     position: absolute
+     top: 2rem
+     left: 50%
+     transform: translateX(-50%)
+     z-index: 30
+     @media screen and (min-width: 390px)
+          top: 6rem

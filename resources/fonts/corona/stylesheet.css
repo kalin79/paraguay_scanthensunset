@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Corona Headline';
+    src: url('CoronaHeadline-SemiBold.eot');
+    src: url('CoronaHeadline-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('CoronaHeadline-SemiBold.woff2') format('woff2'),
+        url('CoronaHeadline-SemiBold.woff') format('woff'),
+        url('CoronaHeadline-SemiBold.ttf') format('truetype'),
+        url('CoronaHeadline-SemiBold.svg#CoronaHeadline-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
